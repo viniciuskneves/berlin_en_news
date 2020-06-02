@@ -1,4 +1,4 @@
-FROM linuxbrew/alpine
+FROM linuxbrew/debian
 
 RUN brew tap aws/tap
 RUN brew install aws-sam-cli

@@ -3,6 +3,6 @@ FROM linuxbrew/alpine
 RUN brew tap aws/tap
 RUN brew install aws-sam-cli
 
-COPY entrypoint.sh /entrypoint.sh
+COPY ./ ./
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "-c"]

@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:stretch-slim
 
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 RUN brew tap aws/tap

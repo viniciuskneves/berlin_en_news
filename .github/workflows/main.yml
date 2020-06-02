@@ -18,7 +18,9 @@ jobs:
       - run: npm ci
       - name: Typescript build
         run: npm run typescript:build
+      #- name: Test
+      #  uses: ./.github/actions/aws-sam/
+      #  with:
+      #    command: sam build
       - name: Test
-        uses: ./.github/actions/aws-sam/
-        with:
-          command: sam build
+        run: brew tap aws/tap

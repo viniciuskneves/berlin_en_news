@@ -1,0 +1,10 @@
+name: AWS SAM
+author: Vinicius Kiatkoski Neves <viniciuskneves@icloud.com>
+description: Runs AWS SAM commands for you.
+
+runs:
+  using: 'docker'
+  pre-entrypoint: 'pre-entrypoint.sh'
+  image: 'docker://linuxbrew/alpine'
+  entrypoint: 'entrypoing.sh'
+  post-entrypoint: 'post-entrypoint.sh'

@@ -19,6 +19,6 @@ jobs:
       - name: Typescript build
         run: npm run typescript:build
       - name: Test
-        uses: tkt-actions/aws-sam-cli@v1
+        uses: ./.github/actions/aws-sam/
         with:
-          cmd: sam build
+          command: sam build

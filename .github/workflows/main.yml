@@ -12,4 +12,4 @@ jobs:
       - name: Test
         uses: ./.github/actions/aws-sam/
         with:
-          command: npm run build
+          command: sam build

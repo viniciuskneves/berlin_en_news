@@ -2,6 +2,13 @@ name: AWS SAM
 author: Vinicius Kiatkoski Neves <viniciuskneves@icloud.com>
 description: Runs AWS SAM commands for you.
 
+inputs:
+  command:
+    description: SAM command that will be executed.
+    default: 'sam --version'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}

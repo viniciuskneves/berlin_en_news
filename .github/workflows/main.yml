@@ -20,3 +20,5 @@ jobs:
         run: npm run typescript:build
       - name: Test
         uses: ./.github/actions/aws-sam/
+        with:
+          command: sam build

@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Typescript build
+        run: npm run typescript:build
       - name: Test
         uses: ./.github/actions/aws-sam/
         with:

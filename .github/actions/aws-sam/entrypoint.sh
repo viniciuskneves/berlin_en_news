@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "entrypoint"
+brew --version

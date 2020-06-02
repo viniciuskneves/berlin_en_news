@@ -4,5 +4,4 @@ description: Runs AWS SAM commands for you.
 
 runs:
   using: 'docker'
-  image: 'docker://linuxbrew/alpine'
-  entrypoint: 'entrypoing.sh'
+  image: 'Dockerfile'

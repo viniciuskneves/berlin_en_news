@@ -39,12 +39,6 @@
     "pretty-quick": "2.0.1",
     "typescript": "3.9.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged --verbose",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

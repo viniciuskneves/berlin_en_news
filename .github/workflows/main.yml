@@ -19,6 +19,6 @@ jobs:
       - name: Typescript build
         run: npm run typescript:build
       - name: Test
-        uses: docker://debian:stetch-slim
+        uses: ./.github/actions/aws-sam/
         with:
-          args: echo "test"
+          command: sam build
